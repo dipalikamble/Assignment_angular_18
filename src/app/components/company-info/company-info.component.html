@@ -1,0 +1,38 @@
+<button type="button" routerLink="/home" class="btn btn-outline-primary">
+  Back
+</button>
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <div class="card p-3" style="width: 30rem">
+      <img src="{{ imagePath }}" class="card-img-top mx-auto w-75" alt="{{routingData.company}}" />
+      <div class="card-body">
+        <h5 class="card-title">Quick Information</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <strong>Founder : </strong>{{ routingData.founders }}
+        </li>
+        <li class="list-group-item">
+          <strong>Headquarter : </strong>{{ routingData.headquarters }}
+        </li>
+        <li class="list-group-item">
+          <strong>CEO : </strong>{{ routingData.ceo }}
+        </li>
+        <li class="list-group-item">
+          <strong>No. of Employee's : </strong>{{ routingData.employees }}
+        </li>
+        <li class="list-group-item">
+          <strong>Net Income : </strong>{{ routingData.income }}
+        </li>
+        <li class="list-group-item">
+          <strong>Tagline : </strong>{{ routingData.tagline }}
+        </li>
+      </ul>
+      <div class="card-body">
+        <h4>
+          <em>"{{ routingData.tagline }}"</em>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>

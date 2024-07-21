@@ -1,0 +1,17 @@
+<form class="login">
+  <h4>Welcome, User!</h4>
+  <p>Please log in</p>
+  <input
+    type="text"
+    name="EmailId"
+    [(ngModel)]="loginObject.EmailId"
+    placeholder="User Name"
+  />
+  <input
+    type="password"
+    name="Password"
+    [(ngModel)]="loginObject.Password"
+    placeholder="Password"
+  />
+  <button type="submit" class="btn btn-primary" (click)="loginBtnClick()">click</button>
+</form>

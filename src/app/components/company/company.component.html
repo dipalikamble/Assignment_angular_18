@@ -1,0 +1,12 @@
+<div class="content">
+  <div class="left-side">
+    <h1>Company information</h1>
+  </div>
+  <div class="row">
+    @for (companyinfo of companyInfoList; track companyinfo) {
+    <app-company-card class="w-50" [companyinfo]="companyinfo">
+    </app-company-card>
+    }
+  </div>
+</div>
+
